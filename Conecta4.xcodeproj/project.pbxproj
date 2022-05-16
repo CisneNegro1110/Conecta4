@@ -17,6 +17,12 @@
 		EAA9EDCF283279590045780F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDA5283279520045780F /* ContentView.swift */; };
 		EAA9EDD0283279590045780F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA9EDA6283279580045780F /* Assets.xcassets */; };
 		EAA9EDD1283279590045780F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA9EDA6283279580045780F /* Assets.xcassets */; };
+		EAA9EDE1283279B80045780F /* BoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE0283279B80045780F /* BoardItem.swift */; };
+		EAA9EDE2283279B80045780F /* BoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE0283279B80045780F /* BoardItem.swift */; };
+		EAA9EDE4283279F00045780F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE3283279F00045780F /* Player.swift */; };
+		EAA9EDE5283279F00045780F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE3283279F00045780F /* Player.swift */; };
+		EAA9EDE828327AA30045780F /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE728327AA30045780F /* BoardViewModel.swift */; };
+		EAA9EDE928327AA30045780F /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EDE728327AA30045780F /* BoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		EAA9EDC4283279590045780F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA9EDC8283279590045780F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EAA9EDCA283279590045780F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EAA9EDE0283279B80045780F /* BoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItem.swift; sourceTree = "<group>"; };
+		EAA9EDE3283279F00045780F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EAA9EDE728327AA30045780F /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,8 @@
 			children = (
 				EAA9EDA4283279520045780F /* Conecta4App.swift */,
 				EAA9EDA5283279520045780F /* ContentView.swift */,
+				EAA9EDEA28327AAB0045780F /* ViewModel */,
+				EAA9EDE6283279F90045780F /* Model */,
 				EAA9EDA6283279580045780F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +150,23 @@
 				EAA9EDCA283279590045780F /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EAA9EDE6283279F90045780F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9EDE3283279F00045780F /* Player.swift */,
+				EAA9EDE0283279B80045780F /* BoardItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EAA9EDEA28327AAB0045780F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9EDE728327AA30045780F /* BoardViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA9EDE4283279F00045780F /* Player.swift in Sources */,
 				EAA9EDCE283279590045780F /* ContentView.swift in Sources */,
 				EAA9EDCC283279590045780F /* Conecta4App.swift in Sources */,
+				EAA9EDE1283279B80045780F /* BoardItem.swift in Sources */,
+				EAA9EDE828327AA30045780F /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA9EDE5283279F00045780F /* Player.swift in Sources */,
 				EAA9EDCF283279590045780F /* ContentView.swift in Sources */,
 				EAA9EDCD283279590045780F /* Conecta4App.swift in Sources */,
+				EAA9EDE2283279B80045780F /* BoardItem.swift in Sources */,
+				EAA9EDE928327AA30045780F /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
